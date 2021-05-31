@@ -10,7 +10,7 @@ import {
 function NavBar() {
   return (
     <div>
-      <Navbar className="nav1" bg="light" expand="lg">
+      <Navbar className="nav1" bg="secondary" expand="lg">
         <Navbar.Brand href="#">Instagram</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" style={{paddingLeft: '1400px'}}>
