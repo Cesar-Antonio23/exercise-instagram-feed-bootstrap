@@ -1,20 +1,22 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from './components/navBar'
-import Buttons from './components/buttonGroup'
-import Fila1 from './components/fila1.js'
-import Fila2 from './components/fila2.js'
-import Fila3 from './components/fila3.js'
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import NavBar from "./components/navBar";
+import Buttons from "./components/buttonGroup";
+import Posts from "./pages/posts"
+import AlonePosts from "./pages/alonePosts"
+
 
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
-      <Buttons/>
-      <Fila1/>
-      <Fila2/>
-      <Fila3/>
-    </div>
+    <BrowserRouter>
+      <NavBar />
+      <Buttons />
+      <Switch>
+        <Route exact path='/' component={Posts}/>
+        <Route exact path='/alonePosts' component={AlonePosts}/>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
