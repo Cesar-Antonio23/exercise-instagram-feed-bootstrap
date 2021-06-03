@@ -1,5 +1,5 @@
 .alonePosts{
-    margin-left: 41rem;
+    margin-left: 18rem;
     margin-top: 3rem;
    
 }
@@ -16,4 +16,19 @@
 
 .tittle{
     margin-top: 1rem
+}
+
+.heart{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 3px;
+}
+
+.dots{
+    display: flex;
+    margin-left: 290px;
+}
+
+.insta-logo{
+    padding-right: 8px;;
 }

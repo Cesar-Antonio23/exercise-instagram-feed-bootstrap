@@ -6,11 +6,13 @@ import {
   Form,
   Button
 } from "react-bootstrap";
+import "../../src/styles/Alone.css";
 
 function NavBar() {
   return (
     <div>
-      <Navbar className="nav1" bg="secondary" expand="lg">
+      <Navbar bg="secondary" expand="lg">
+      <i className=" insta-logo bi bi-instagram"></i>
         <Navbar.Brand href="#">Instagram</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" style={{paddingLeft: '1400px'}}>
